@@ -21,3 +21,8 @@ jobs:
       	CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
       with:
         flags: backend
+
+on:
+  push:
+    paths:
+      - 'api/**'

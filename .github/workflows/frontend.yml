@@ -24,3 +24,8 @@ jobs:
           CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
         with:
           flags: frontend
+
+on:
+  push:
+    paths:
+      - 'web/**'
